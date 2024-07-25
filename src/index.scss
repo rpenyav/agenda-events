@@ -1,0 +1,113 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0px;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.masonry-item {
+  margin-bottom: 25px;
+}
+
+.date-text {
+  font-size: 14px;
+  // font-weight: 500;
+}
+
+.horari-text {
+  font-style: italic;
+  font-size: 12px;
+  color: #555;
+}
+
+.date-text-big {
+  font-size: 18px;
+  // font-weight: 500;
+}
+
+.horari-text-big {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.card {
+  transition: background-color 0.3s ease;
+
+  &.hover {
+    background-color: #f0f0f0;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#map {
+  height: 400px;
+  flex: 1;
+}
